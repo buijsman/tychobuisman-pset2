@@ -10,8 +10,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="tycho.tychobuisman_pset2.activity">
 
-    <TextView
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:src="@drawable/madlibs"
+        android:id="@+id/madlibs"/>
+
+
+    <Button
+        android:text="GET STARTED!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="forward"
+        android:id="@+id/button" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Welcome to MadLibs!"
+        android:textSize="30dp"
+        android:layout_marginTop="300dip"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>
