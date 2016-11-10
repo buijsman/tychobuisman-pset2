@@ -33,9 +33,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Welcome to MadLibs!"
-        android:textSize="30dp"
-        android:layout_marginTop="300dip"
-        android:layout_centerHorizontal="true"/>
+        android:text="Welcome to MadLibs! I will ask you to give me a few words to complete a story. You won't be able to see the complete story until you are done filling in the words. Click below to get started!"
+        android:textSize="15dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/madlibs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
 
 </RelativeLayout>

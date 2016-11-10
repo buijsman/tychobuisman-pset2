@@ -42,5 +42,23 @@
         android:id="@+id/button2"
         android:onClick="savePlaceholder"/>
 
+    <TextView
+        android:text="type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:id="@+id/placeholdertype" />
+
+    <TextView
+        android:text="count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"
+        android:id="@+id/wordsleft" />
+
 
 </RelativeLayout>

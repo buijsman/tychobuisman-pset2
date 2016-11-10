@@ -1,10 +1,15 @@
+/*
+This screen will show the complete story and give the user the option to fill in a new story.
+ */
+
 package tycho.tychobuisman_pset2;
 
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+
 
 public class display extends AppCompatActivity {
 
@@ -14,14 +19,18 @@ public class display extends AppCompatActivity {
         setContentView(R.layout.activity_display);
 
         displaythestory();
-
     }
 
     public void displaythestory(){
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String placeholder = preferences.getString("placeholder", "");
 
+        String story = getIntent().getExtras().getString("story");
         TextView displaystring = (TextView)findViewById(R.id.displaystring);
-        displaystring.setText(placeholder);
+        displaystring.setText(story);
+    }
+
+    public void newStory(View view){
+        Intent goToFiller = new Intent(this, Filler.class);
+        startActivity(goToFiller);
+        finish();
     }
 }
